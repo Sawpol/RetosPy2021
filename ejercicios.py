@@ -49,28 +49,17 @@ Vean que la lista contiene el numero que le pasan como argumento
 
 
 
-
-x = 7
-y = 8  
-
-
-
-
-
-
-list_of_multiples(1,10)
+def multiplos(numero,rango):
+   list_Numbers = []
+   result = numero
+   for i in range(rango):
+       result += numero*i
+       list_Numbers.append(result)
+   return list_Numbers     
 
 
+multiplos(3,4)
 
-
-def cuenta_regresiva(numero):
-     numero -= 1
-if numero > 0:
-         print numero
-         cuenta_regresiva(numero)
-     else:
-         print "Boooooooom!"
- print "Fin de la función", numero
 
 
 
@@ -82,3 +71,53 @@ def factorial(number):
 
 
 factorial(5)
+
+
+
+Ejercicio 4
+
+Crear una funcion que formatee numeros 😄
+
+Ejemplos
+
+format_numer(1000) -> '1,000'
+
+format_numer(43214124) -> '43,214,124'
+
+Restricciones
+
+    El argumento no puede ser negativo
+    El argumento deben ser entero
+
+Ejercicio 4.1
+
+    Agregar el separador que el usuario indique
+
+Ejemplo
+
+format_numer(1000,'#') -> '1#000'
+
+format_numer(43214124) -> '43#214#124'
+
+
+def numeros_formateados(numero,caracter):
+    if not isinstance(numero,int):
+        return None,'No es entero'
+    if not isinstance(caracter,str):
+        return None,'No es válido'
+
+
+
+
+
+i= 20
+
+[i for i in range (100) if not i % 2 == 0 ]
+
+
+
+
+
+
+
+
